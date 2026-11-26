@@ -35,10 +35,11 @@ def land_passengers(source_glob: str) -> None:
 
 
 if __name__ == "__main__":
-    ##land_trips("data/raw/trips_2026-*.csv")
-   ## land_drivers("data/raw/drivers.csv")
-   land_passengers("data/raw/passengers.csv")
-    ##land_gps("data/raw/gps/*.ndjson")
-print("landed")
+    land_trips("data/raw/trips_2026-*.csv")
+    land_drivers("data/raw/drivers.csv")
+    land_passengers("data/raw/passengers.csv")
+    land_gps("data/raw/gps/*.ndjson")
+    print("landed")
+
 
 

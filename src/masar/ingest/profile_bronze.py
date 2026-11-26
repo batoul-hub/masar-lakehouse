@@ -17,5 +17,11 @@ def profile(table_path: str) -> None:
 
 
 if __name__ == "__main__":
-    profile("./lakehouse/bronze/passengers")
+    tables = [
+        "./lakehouse/bronze/trips"
+        
+    ]
+    for table_path in tables:
+        print(f"\nProfiling: {table_path}")
+        profile(table_path)
 
